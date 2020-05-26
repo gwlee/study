@@ -13,7 +13,7 @@ except:
 
 outputName = inputID.strip()
 out = open('{}.fasta'.format(outputName),'w')
-print ('')
+print ('Accession ID > fasta file')
 convert2gi = Entrez.read(Entrez.esearch(db="nucleotide", term=inputID.strip(), retmode="xml"))
 gi = convert2gi['IdList'][0]
 handle = Entrez.efetch(db="nucleotide", id="{}".format(gi), rettype="fasta", retmode="text")
