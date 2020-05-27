@@ -1,6 +1,5 @@
 import os
 import sys
-import urllib.request
 from Bio import Entrez, SeqIO
 
 Entrez.email = 'anonymous@anonymous.me'
