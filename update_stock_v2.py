@@ -14,9 +14,8 @@ if not conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=
     "high" REAL,
     "low" REAL,
     "close" REAL,
-    "volume" INTEGER,
-    "dividends" REAL,
-    "stock_splits" TEXT)""")
+    "adj_close" REAL,
+    "volume" INTEGER)""")
     conn.commit()
 
 else:
