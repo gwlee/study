@@ -7,7 +7,7 @@ conn = sqlite3.connect('stocks.db')
 
 #table이 없으면 테이블 생성해서 주가 업데이트
 if not conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=stock_prices").fetchone():
-    conn.execute("""CREATE TABLE "stocks" (
+    conn.execute("""CREATE TABLE "stock_prices" (
     "symbol" TEXT,
     "date" DATE,
     "open" REAL,
